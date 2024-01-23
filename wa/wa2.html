@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Me!</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {font-family: baskerville, serif;}
+        header {
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+        }
+
+        nav {
+        float: left;
+        width: 20%;
+       
+        padding: 20px;
+        text-align: center;
+        }
+
+        article {
+        float: left;
+        padding: 30px;
+        width: 80%;
+        font-size: 30px;
+        }
+
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        footer {
+        padding: 10px;
+        text-align: center;
+        }
+
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1 style="font-family: luminari, fantasy;"">NEB BERRY</h1>
+        </header>
+        <nav>
+            <img src="../img/nebHeadshot.jpg" alt="Neb Headshot" width="300" height="400">
+        </nav>
+        <article>
+            <p>My pronouns are they/she. </p>
+            <p>I am a Spanish and Art Practices double major with a CTD minor. I have been studying at CU for four years.</p>
+            <p>My goals for this class are to learn how to design better websites in a creative and innovative way.</p>
+            <p><a href="https://www.youtube.com/watch?v=PK2SMIOHYig">This</a> is my favorite youtube video.</p>
+            
+        </article>
+    </section>
+    <footer>
+        <p>*Disclaimer* I used the <a href="https://www.w3schools.com/html/html_layout.asp"> w3 schools layout tutorial</a> as a guide to develop the layout for my website</p>
+    </footer>
+    
+</body>
+</html>
