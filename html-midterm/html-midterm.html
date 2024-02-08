@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     
@@ -6,9 +7,9 @@
     <title>Error-Filled Page</title>
     
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page</h1>
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
     
     <ol>
         <li>Item 1</li>
@@ -21,13 +22,13 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol>
 
-    <p>This is another paragraph without proper indentation.
+    <p>This is another paragraph without proper indentation.</p>
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="Meme about web design">
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!</a>
 
     <table>
         <tr>
@@ -42,24 +43,47 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
+    </table>
     
-    <img source="error.jpeg" alt="Error Image">
+    <img src="error.jpeg" alt="Error Image">
 
-    <center>This is centered text.</center>
+    <p style="text-align: center;">This is centered text.</p>
 
-    <p bgcolor="lightgray">Text</p>
+    <p style="background-color: lightgrey;">Text</p>
 
     <input type="button" value="Click me">
 
-    <!-- This is an unclosed comment
+    <!-- This is an unclosed comment -->
 
-    <a href="#">Link without closing tag
+    <a href="#">Link without closing tag</a>
 
-    <p><em>Underlined text</p></em>
+    <p><u>Underlined text</u></p>
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
     </dl>
+
+    <ol>
+        <li>There was no doctype so I added one</li>
+        <li>The heading didn't have a closing tag so I added a closing tag</li>
+        <li>The paragraph didn't have an opening tag so I added an opening tag</li>
+        <li>The list had mismatched tags so I switched the closing tag to ol</li>
+        <li>The paragraph had no closing tag so I added a closing tag</li>
+
+        <li>The image had no alt attribute so I added one</li>
+        <li>The link had an img closing tag so I changed it to a link closing tag</li>
+        <li>The table didn't have a closing tag so I added a closing table tag</li>
+        <li>The image used the word source instead of src so I changed it to src</li>
+        <li>The text was centered using center which is no longer supported so I changed it to a paragraph with the text-align attribute</li>
+        <li>The text with a light grey background used the wrong attribute and didn't use style="" in the opening tag so I added the style part and switched the attribute</li>
+
+        <li>There was an unclosed comment so in order to fix it I added "-->"</li>
+        <li>There was a link without a closing tag so I added closing link tag</li>
+        <li>For the underlined text em was used instead of u and the closing tags were swapped so I changed the em to a u tag and moved the closing u tag before the closing p tag</li>
+        <li>In the description list li tags were used for both the title and the text so I switched the title to a dt tag and the text to a dd tag</li>
+    </ol>
+
+
 </body>
 </html>
