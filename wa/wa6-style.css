@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    background-image: url(assetsWa6/squirrelPoker.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    background-color: white;
+}
+
+img {
+    width: 25%;
+    position: absolute;
+    right: 0.1%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 3%;
+    top: 80%;
+}
+
+div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1 {
+    font-family: olivita, sans-serif;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.left {
+    background-color: white;
+    position: fixed;
+    left: 1%;
+    text-align: left;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.center {
+    position: fixed;
+    background-color: rgb(247, 168, 48);
+    max-width: 10%;
+    left: 40%;
+    text-align: center;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.right {
+    background-color: white;
+    position: fixed;
+    right: 1%;
+    text-align: right;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+
