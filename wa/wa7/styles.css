@@ -74,5 +74,15 @@ body {
       display: flex;
       flex-direction: column;
     }
+
+    .photos {
+      grid-template-columns: 100px 100px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+
   }
   
