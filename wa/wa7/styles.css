@@ -62,14 +62,14 @@ body {
       width: 200px;
   }
 
-  @media screen and (min-width: 500px) {
+  @media (min-width: 500px) {
     .grid {
       display: flex;
     }
   }
   
 
-  @media screen and (max-width: 500px) {
+  @media (max-width: 500px) {
     .grid {
       display: flex;
       flex-direction: column;
