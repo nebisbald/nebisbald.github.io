@@ -29,14 +29,17 @@ h2 {
 
 section {
     flex: 2;
-    margin-bottom: 5%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #n1 {
     width: 100px;
     height: 100px;
-    position: fixed;
-    left: 200px;
+    position: sticky;
+    left: 15%;
     top: 335px;
 }
 
@@ -65,10 +68,11 @@ section {
 #n2 {
     width: 216px;
     height: 117px;
-    position: fixed;
+    position: sticky;
     left: 380px;
     top: 307px;
 }
+
 
 #n2:hover {
     transition-duration: 1s;
@@ -81,7 +85,7 @@ section {
 #n3 {
     width: 39px;
     height: 86px;
-    position: fixed;
+    position: sticky;
     left: 600px;
     top: 283px;
 }
@@ -97,7 +101,7 @@ section {
 #n4 {
     width: 39px;
     height: 86px;
-    position: fixed;
+    position: sticky;
     left: 670px;
     top: 313px;
 }
@@ -113,7 +117,7 @@ section {
 #n5 {
     width: 216px;
     height: 117px;
-    position: fixed;
+    position: sticky;
     left: 830px;
     top: 307px;
 }
@@ -129,7 +133,7 @@ section {
 #n6 {
     width: 39px;
     height: 86px;
-    position: fixed;
+    position: sticky;
     left: 1080px;
     top: 283px;
 }
@@ -145,7 +149,7 @@ section {
 #n7 {
     width: 39px;
     height: 86px;
-    position: fixed;
+    position: sticky;
     left: 1150px;
     top: 313px;
 }
@@ -161,7 +165,7 @@ section {
 #n8 {
     width: 216px;
     height: 117px;
-    position: fixed;
+    position: sticky;
     left: 1360px;
     top: 250px;
 }
@@ -177,7 +181,7 @@ section {
 #n9 {
     width: 100px;
     height: 100px;
-    position: fixed;
+    position: sticky;
     left: 1600px;
     top: 283px;
 }
@@ -199,5 +203,5 @@ p {
     font-weight: 200;
     font-style: normal;
     font-size: 35px;
-    margin: 10%;
+    margin: 5%;
 }
