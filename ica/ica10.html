@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+</head>
+<body>
+    <img id="headshot" onmouseover="hide('headshot')" style="height:800px;width:600px;" src="/img/nebHeadshot.jpg" alt="Neb Headshot">
+    <p>Leave my picture alone!</p>
+    <button onclick="reset('headshot')" type="button">Reset!</button>
+
+    <script>
+        function hide(x){
+            document.getElementById(x).style.visibility = 'hidden';
+        }
+        function reset(x){
+            document.getElementById(x).style.visibility = 'initial';
+        }
+
+    </script>
+</body>
+</html>
