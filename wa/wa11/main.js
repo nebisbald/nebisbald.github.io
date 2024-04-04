@@ -10,7 +10,7 @@ const pics = ['pic1.jpg','pic2.jpg','pic3.jpg','pic4.jpg','pic5.jpg'];
 
 /* Declaring the alternative text for each image file */
 
-const altText = ['pic1','pic2','pic3','pic4','pic5'];
+const altText = ['mad guy','monotype print','collage','digital collage','absence of light'];
 
 /* Looping through images */
 for (let i = 0; i < 5; i++){
