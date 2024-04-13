@@ -98,3 +98,9 @@ html {
     max-width: 90%;
     padding: 10px 30px;
   }
+
+p {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+}
