@@ -1,0 +1,4 @@
+{ "employees" : [ 
+{ "firstName":"Sam", "department":"tech", "designation":"manager", "salary":"40000", "raiseEligible":"true" },,
+{ "firstName":"Mary", "department":"finance", "designation":"trainee", "salary":"18500", "raiseEligible":"true" },,
+{ "firstName":"Bill", "department":"HR", "designation":"Executive", "salary":"21200", "raiseEligible":"true" } ]}
