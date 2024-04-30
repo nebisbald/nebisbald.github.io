@@ -1,6 +1,7 @@
 body {
     width: 10000px;
     height: 10000px;
+    background-image: url(grid.png);
 }
 
 button {
