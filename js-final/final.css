@@ -7,3 +7,11 @@ body {
 button {
     position: absolute;
 }
+
+img {
+    width: 60px;
+    height: 300px;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
