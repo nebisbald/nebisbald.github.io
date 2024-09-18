@@ -16,7 +16,8 @@ const roundOneQuestions = [
 ];
 
 const nextRoundButton = document.getElementById('next-round-button');
-const roundTwo = document.getElementById('round-to');
+//ERROR FIXED
+const roundTwo = document.getElementById('round-two');
 const roundTwoQuestions = [
   {
     input: document.getElementById('galilean-moons-input'),
@@ -45,7 +46,8 @@ function startGame() {
     const question = roundOneQuestions[i];
 
     function answerQuestion() {
-      const score;
+      //ERROR FIXED
+      let score;
       if (question.input.value == question.answer) {
         score = 1;
 
@@ -88,13 +90,14 @@ function startRoundTwo(event) {
   nextRoundButton.classList.add('hidden');
 
   roundOneQuestions.forEach(question => question.deactivate());
-
-  for (let i = 0; i < roundTwoQuestions.size; i++) {
+  //ERROR FIXED
+  for (let i = 0; i < roundTwoQuestions.length; i++) {
     const question = roundTwoQuestions[i];
 
     function answerQuestion() {
       let score;
-      if (question.input.value === question.answer) {
+      //ERROR FIXED
+      if (question.input.value == question.answer) {
         score = 1;
 
         question.reactionArea.innerText = 'Congrats! You got the question right!';
@@ -103,12 +106,11 @@ function startRoundTwo(event) {
       } else {
         score = 0;
 
-//ERROR FIXED
+      //ERROR FIXED
         question.reactionArea.innerText = "Not quite right, but you're almost there!";
         question.reactionArea.classList.add('incorrect');
         question.reactionArea.classList.remove('correct');
       }
-
       const index = roundOneQuestions.length + i;
       if (scores.length <= index) {
         scores.push(score);
@@ -142,7 +144,8 @@ function finishGame(event) {
   finishButton.classList.add('hidden');
   finalScore.classList.remove('hidden');
 
-  const sum = 0;
+  //ERROR FIXED
+  let sum = 0;
   for (const score of scores) {
     sum += score;
   }
