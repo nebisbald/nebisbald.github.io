@@ -72,6 +72,13 @@ async function startGame() {
     dealerTotal += getValue(cardsDrawn.cards[3].value, false);
 
     dealerScore.innerText = dealerTotal;
+
+    if(checkWin()){
+        standButt.style.display = 'none';
+        hitMeButt.style.display = 'none';
+        startGameButt.style.display = 'block';
+    }
+
 }
 
 async function dealCard() {
@@ -202,6 +209,11 @@ async function endRound(){
             wins ++;
             winsText.innerText = `Wins: ${wins}`;
         }
+        else if(playerTotal == dealerTotal){
+            winStatus.style.visibility = 'visible';
+            winStatus.innerText = "You tied :/";
+            winsText.innerText = `Wins: ${wins}`;
+        }
         else{
 
             winStatus.style.visibility = 'visible';
@@ -227,7 +239,7 @@ function getValue(v, pod){
     }
     else if(v == "ACE"){
         if(pod){
-            if(playerTotal < 10){
+            if(playerTotal < 11){
                 return 11;
             }
             else{
@@ -235,7 +247,7 @@ function getValue(v, pod){
             }
         }
         else{
-            if(dealerTotal < 10){
+            if(dealerTotal < 11){
                 return 11;
             }
             else{
