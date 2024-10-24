@@ -1,0 +1,49 @@
+form {
+  max-width:200px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+menu {
+  background-color: grey;
+  min-width: 200px;
+  border-style: solid;
+  height: 100%;
+  margin-right: 3%;
+  
+}
+
+svg {
+  padding: 3%;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h3{
+  display: flex;
+}
+
+#main {
+  width: 100%;
+  padding-right: 5%;
+}
+
+#context {
+  max-width: 30%;
+  font-size: 18pt;
+}
+
+

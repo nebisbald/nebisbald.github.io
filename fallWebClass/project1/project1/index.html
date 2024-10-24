@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YLL Grapher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+  <div id="main">
+    <h1>How does your weight affect your life expectancy? Find out by entering your information into our BMI Calculator:</h1>
+    <div id="container">
+      <div id="datafield">
+      <form>
+        <fieldset>
+          <legend>Height and Weight</legend>
+          <label>Feet</label>
+          <input id="feet" type="text">
+          <label>Inches</label>
+          <input id="inches" type="text">
+
+          <label>Pounds</label>
+          <input id="pounds" type="text">
+
+          <button id="submit">Calculate!</button>
+        </fieldset>
+
+      </form>
+    </div>
+      <div id="context">
+        <h3>Background</h3>
+        <p>If you have a larger body, it is inevitable that at some point someone has or will tell you that your weight is going to cause premature death. I myself have heard it many times over and personally it has always really frustrated me. To be honest, I don't care how many years are taken off my life because I am fat. This led me to wonder, what is the comparison between the affect obesity or weight has on your life expectancy compared to other risk factors? As it turns out, being fat is nothing compared to other demographic factors such as race, ethnicity, and gender. For this project, I looked at a variety of sources on estimated years of life lost (or YLL) based on the factors I just named. This number is calculated by comparing the age at death to the average life expectancy for each individual and then averaging the totals for the different groups. As you can see by entering a variety of weights and heights, your BMI is relatively insignificant when compared to groups such as smokers or indigenous men who have the highest average years of life lost in the data that I looked at. For this project I used the following resources:<br><a href="https://wisqars.cdc.gov/lcd/?o=LCD&y1=2022&y2=2022&ct=10&cc=ALL&g=00&s=0&r=0&ry=2&e=0&ar=lcd1age&at=groups&ag=lcd1age&a1=0&a2=199">WISQARS Leading Causes of Death Visualization Tool</a><br><a href="https://jamanetwork.com/journals/jama/fullarticle/195748">Years of Life Lost Due to Obesity</a><br><a href="https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(24)00166-X/fulltext#sec-1">Forecasting the effects of smoking prevalence scenarios on years of life lost and life expectancy from 2022 to 2050</a><br><a href="https://ourworldindata.org/grapher/number-of-deaths-from-tobacco-smoking?tab=table">Number of Deaths From Tobacco Smoking</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
