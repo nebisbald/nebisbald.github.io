@@ -1,5 +1,7 @@
 //import * as d3 from "/node_modules/d3/src/index.js";
-import * as d3 from 'https://unpkg.com/d3?module'
+//import * as d3 from "./node_modules/d3/src/index.js";
+//import * as d3 from 'https://unpkg.com/d3?module'
+import * as d3 from "d3";
 
 function calculateBMI(feet, inches, pounds){
   if(feet == '' || inches == '' || pounds == ''){
